@@ -6,7 +6,6 @@ package cn.tl.effective.charpter4;
  */
 public class Chapter4Test {
 
-
     public static void main(String[] args) {
         new Son().run();
         Son.father();
