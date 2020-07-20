@@ -37,4 +37,8 @@ public enum MyEnum {
     };
 
     public abstract String see();
+
+    public static void test(int styles) {
+        System.out.println(styles);
+    }
 }
