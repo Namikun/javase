@@ -45,17 +45,42 @@ public class ListTest<T> {
                 .forEach(System.out::println);
     }
 
+    /**
+     * 求集合的所有子集：按位对应法
+     */
+    public static List<List<Integer>> getAllSubList(List<Integer> list) {
+        int size = 1 << list.size();
+        List<List<Integer>> result = new ArrayList<>(size);
+        for (int i = 0; i < size; i++) {
+            List<Integer> temp = new ArrayList<>();
+            int index = i;
+            for (int j = 0; index > 0; j++, index >>= 1) {
+                if ((index & 1) != 0) {
+                    temp.add(list.get(j));
+                }
+            }
+            result.add(temp);
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
         list.add(3);
-        printAllSubList(list);
+        //printAllSubList(list);
 
         Set<String> set = new HashSet<>();
         set.add("a");
         set.add("b");
         set.add("c");
         System.out.println(get(set));
+
+        System.out.println(getAllSubList(list));
+
     }
+
+
 }
