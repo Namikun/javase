@@ -70,14 +70,4 @@ public class Person {
         hobby = builder.hobby;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", age=" + age +
-                ", birthday=" + birthday +
-                ", hobby='" + hobby + '\'' +
-                '}';
-    }
 }

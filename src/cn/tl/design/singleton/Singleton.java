@@ -8,20 +8,21 @@ public class Singleton {
     private static volatile Singleton instance = null;
 
     /**
-     * 双重if判断
+     * 双重if判断，加上局部变量
      *
      * @return
      */
     public static Singleton getInstance1() {
-        if (instance == null) {
+        Singleton result = instance;
+        if (result == null) {
             synchronized (Singleton.class) {
-                if (instance == null) {
-                    instance = new Singleton();
+                if (result == null) {
+                    result = instance = new Singleton();
                 }
             }
         }
 
-        return instance;
+        return result;
     }
 
     public static Singleton getInstance() {

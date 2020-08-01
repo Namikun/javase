@@ -9,8 +9,4 @@ package cn.tl.effective.chapter2;
 public enum SingletonEnum {
 
     INSTANCE;
-
-    public void run() {
-        System.out.println(23333);
-    }
 }
