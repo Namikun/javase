@@ -1,4 +1,4 @@
-package cn.tl.effective.charpter6;
+package cn.tl.effective.chapter6;
 
 /**
  * @author namikun

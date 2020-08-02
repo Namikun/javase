@@ -1,4 +1,4 @@
-package cn.tl.effective.charpter7;
+package cn.tl.effective.chapter7;
 
 import java.math.BigInteger;
 import java.util.stream.LongStream;

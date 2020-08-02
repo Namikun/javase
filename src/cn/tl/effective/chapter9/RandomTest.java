@@ -1,4 +1,4 @@
-package cn.tl.effective.charpter9;
+package cn.tl.effective.chapter9;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;

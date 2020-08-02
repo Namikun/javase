@@ -1,8 +1,8 @@
-package cn.tl.effective.charpter6;
+package cn.tl.effective.chapter6;
 
 import java.util.EnumSet;
 
-import static cn.tl.effective.charpter6.MyStrategyEnum.*;
+import static cn.tl.effective.chapter6.MyStrategyEnum.*;
 
 /**
  * @author namikun
