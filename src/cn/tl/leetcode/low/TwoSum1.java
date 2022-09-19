@@ -1,4 +1,4 @@
-package cn.tl.leetcode;
+package cn.tl.leetcode.low;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.Map;
  * 输出：[0,1]
  * 解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
  */
-public class TwoSum {
+public class TwoSum1 {
 
     public static void main(String[] args) {
         //int[] nums = {3, 3};
