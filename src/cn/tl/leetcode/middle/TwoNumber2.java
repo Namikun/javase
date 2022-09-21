@@ -31,10 +31,9 @@ public class TwoNumber2 {
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode head = null;
-        ListNode tail = null;
+        ListNode head = null, tail = null;
         int carry = 0;
-        while (l1 != null || l2 != null) {
+        while (carry == 1 || l1 != null || l2 != null) {
             int temp = carry;
             if (l1 != null) {
                 temp += l1.val;
@@ -53,10 +52,6 @@ public class TwoNumber2 {
             tail = node;
             carry = temp / 10;
         }
-        if (carry != 0) {
-            ListNode node = new ListNode(carry);
-            tail.next = node;
-        }
 
         return head;
     }
@@ -68,9 +63,6 @@ class ListNode {
     int val;
 
     ListNode next;
-
-    public ListNode() {
-    }
 
     public ListNode(int val) {
         this.val = val;
